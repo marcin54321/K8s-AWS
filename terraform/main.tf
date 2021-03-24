@@ -17,5 +17,7 @@ module "security_group" {
 module "ec2_instance" {
   source = "./modules/aws_ec2_instance"
   subnet_id = module.subnet.subnet_id
-  sg_ssh_id = module.security_group.sg_ssh_id 
+  sg_ssh_id = module.security_group.sg_ssh_id
+  sg_all_id = module.security_group.sg_all_id
+  sg_k8s_id = module.security_group.sg_k8s_id
 }

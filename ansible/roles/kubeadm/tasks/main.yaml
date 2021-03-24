@@ -1,0 +1,5 @@
+---
+
+- name: Initialize the Kubernetes cluster using kubeadm
+  command: kubeadm init --apiserver-advertise-address={{ hostvars[inventory_hostname].ansible_ens5.ipv4.address }} --apiserver-cert-extra-sans={{ hostvars[inventory_hostname].ansible_ens5.ipv4.address }} --node-name k8s-master-{{ index }} --pod-network-cidr=192.168.0.0/24 --ignore-preflight-errors=Mem
+

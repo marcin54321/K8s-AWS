@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: true
+  gather_facts: yes
+  roles:
+  - docker  
+  - swap
+  - install
+  - kubeadm
+  - kubeconfig
+  - cni
+  - kubejoin  
