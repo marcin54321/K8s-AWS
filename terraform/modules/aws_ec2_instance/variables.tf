@@ -3,11 +3,11 @@ variable "master_instance_count" {
 }
 
 variable "worker_instance_count" {
-  default     = "1"
+  default     = "3"
 }
 
 variable "instance_type" {
-  default = "t3.micro"
+  default = "t3.medium"
 }
 
 variable "public_key" {

@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  gather_facts: yes
+  tasks:
+  - name: print
+    debug:
+      msg: "{{ hostvars[inventory_hostname].ansible_ens5.ipv4.address }}"

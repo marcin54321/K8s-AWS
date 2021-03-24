@@ -1,0 +1,1 @@
+kubeadm join 172.31.10.10:6443 --token b0oakg.08oqiy64hxtyqo09     --discovery-token-ca-cert-hash sha256:bb7991496b8d6ffa7f1723f0ba3194d98a3196c07cfff6f656a08ddc65edb5e8 
