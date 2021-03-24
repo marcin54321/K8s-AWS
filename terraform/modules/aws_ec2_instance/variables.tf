@@ -3,7 +3,7 @@ variable "master_instance_count" {
 }
 
 variable "worker_instance_count" {
-  default     = "3"
+  default     = "1"
 }
 
 variable "instance_type" {
