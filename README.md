@@ -6,7 +6,7 @@ Kubernetes cluster deployment in AWS cloud. This is a demo repository.
 * Deploy a bastion Ubuntu based host. You can use one of public cloud image avaiable in the internet
 * Install required packages
  ```
- ./install_sofware.sh
+ ./install_requirements.sh
  ```
 * Set up awscli for your IAM user
 ```
